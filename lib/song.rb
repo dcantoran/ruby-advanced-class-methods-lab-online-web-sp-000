@@ -27,8 +27,8 @@ class Song
       if song.name == song_name
         return song
       end 
-      false 
     end 
+      false 
   end 
 
   def self.all
