@@ -27,7 +27,7 @@ class Song
       if song.name == song_name
         return song
       elsif !song.name.include?(song_name)
-        false 
+        return false 
       end 
     end 
   end 
