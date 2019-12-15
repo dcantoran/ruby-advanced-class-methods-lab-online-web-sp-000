@@ -32,9 +32,10 @@ class Song
   end 
   
   def self.find_or_create_by_name(name_str)
-    if @@all.include?(name_str)
-      self.find_by_name(name_str) || self.create_by_name(name_str)
+    if !self.find_by_name(name_str)
+      create_by_name(name_str)
     end 
+    
   end 
 
   def self.all
