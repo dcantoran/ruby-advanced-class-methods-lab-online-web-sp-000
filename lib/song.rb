@@ -7,6 +7,10 @@ class Song
     song.save
     song
   end 
+  
+  def self.new_by_name("song_name")
+    song = self.new("song_name")
+  end 
 
   def self.all
     @@all
