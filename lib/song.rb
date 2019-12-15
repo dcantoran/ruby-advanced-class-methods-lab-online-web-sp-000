@@ -16,7 +16,7 @@ class Song
   end 
   
   def self.create_by_name(name_prop)
-    song = self.create(name_prop)
+    song = self.new(name_prop)
   end 
 
   def self.all
