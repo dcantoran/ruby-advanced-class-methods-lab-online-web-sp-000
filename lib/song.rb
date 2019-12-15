@@ -32,12 +32,12 @@ class Song
   end 
   
   def self.find_or_create_by_name(name_str)
-    # if !self.find_by_name(name_str)
-    #   create_by_name(name_str)
-    # else 
-    #   self.find_by_name(name_str)
-    # end 
-    self.create_by_name(name_str) if self.find_by_name(name_str) == false
+    if !self.find_by_name(name_str)
+      create_by_name(name_str)
+    else 
+      self.find_by_name(name_str)
+    end 
+    
     
   end 
 
