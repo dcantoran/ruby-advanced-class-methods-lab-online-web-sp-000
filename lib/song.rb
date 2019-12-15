@@ -25,7 +25,7 @@ class Song
   def self.find_by_name(song_name)
     @@all.map do |song|
       if song.name == song_name
-        song
+        self
       end 
     end 
   end 
