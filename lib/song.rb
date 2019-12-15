@@ -17,6 +17,7 @@ class Song
   end 
   
   def self.create_by_name(name_prop)
+    name_prop = self.create 
     
   end 
 
