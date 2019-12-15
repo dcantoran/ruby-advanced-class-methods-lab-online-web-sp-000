@@ -11,7 +11,9 @@ class Song
   end 
   
   def self.new_by_name(song_name)
-    song_name = self.new 
+    new_song = self.new(song_name)
+    new_song.save 
+    new_song
     # binding.pry
   end 
 
