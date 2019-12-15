@@ -26,6 +26,8 @@ class Song
     @@all.each do |song|
       if song.name == song_name
         return song
+      else 
+        false 
       end 
     end 
   end 
