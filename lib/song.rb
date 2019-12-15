@@ -27,7 +27,7 @@ class Song
       if song.name == song_name
         return song
       else
-        return false 
+        
       end 
     end 
   end 
