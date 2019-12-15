@@ -12,8 +12,7 @@ class Song
   
   def self.new_by_name(song_name)
     song_name = self.new 
-    song_name.save 
-    song_name
+    
   end 
   
   def self.create_by_name(name_prop)
