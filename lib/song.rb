@@ -42,7 +42,7 @@ class Song
     str_format = str.split(".")[-1]
     if str_format == "mp3"
       song = self.new 
-      song.artist = str
+      song.artist_name = str
       binding.pry
     end 
   end 
