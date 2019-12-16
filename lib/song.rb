@@ -44,7 +44,7 @@ class Song
       song = self.new 
       song.artist = str
     end 
-    # binding.pry
+    binding.pry
   end 
 
   def self.all
