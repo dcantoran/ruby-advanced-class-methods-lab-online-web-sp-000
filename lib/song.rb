@@ -32,7 +32,11 @@ class Song
     find_by_name(name_str) || create_by_name(name_str)
   end 
   
-  def self.
+  def self.alphabetical
+    @@all.find do |song| 
+      song.name.sort
+    end 
+  end 
 
   def self.all
     @@all
