@@ -39,7 +39,7 @@ class Song
   end 
   
   def self.new_from_filename(str_format)
-    
+    str_format.split(".")
     binding.pry
   end 
 
