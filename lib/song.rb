@@ -40,6 +40,7 @@ class Song
   
   def self.new_from_filename(str)
     str_format = str.split(".")[-1]
+    str_format
     # binding.pry
   end 
 
