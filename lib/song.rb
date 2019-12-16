@@ -37,6 +37,10 @@ class Song
       song.name
     end 
   end 
+  
+  def self.new_from_filename
+    song = self.new 
+  end 
 
   def self.all
     @@all
