@@ -44,7 +44,7 @@ class Song
       song = self.new 
       song.artist_name = str.split("-")[0].strip
       song.name = str.split("-")[1].chomp(".mp3").strip
-      binding.pry
+      # binding.pry
     end 
   end 
 
