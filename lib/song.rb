@@ -43,8 +43,8 @@ class Song
     if str_format == "mp3"
       song = self.new 
       song.artist = str
+      binding.pry
     end 
-    binding.pry
   end 
 
   def self.all
