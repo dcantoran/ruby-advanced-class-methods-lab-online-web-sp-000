@@ -40,7 +40,10 @@ class Song
   
   def self.new_from_filename(str)
     str_format = str.split(".")[-1]
-    str_format
+    if str_format == "mp3"
+      song = self.new 
+      song.artist = str
+    end 
     # binding.pry
   end 
 
