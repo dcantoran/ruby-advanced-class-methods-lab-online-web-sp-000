@@ -51,7 +51,14 @@ class Song
   end 
   
   def self.create_from_filename(str)
-    
+    str_format = str.split(".")[-1]
+    if str_format == "mp3"
+      song = self.create
+      song.artist_name = str.split("-")[0].strip
+      song.name = str.split("-")[1].chomp(".mp3").strip
+      song 
+      # binding.pry
+    end 
   end 
 
   def self.all
