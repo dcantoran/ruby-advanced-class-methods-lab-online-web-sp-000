@@ -33,8 +33,8 @@ class Song
   end 
   
   def self.alphabetical
-    @@all.find do |song| 
-      song.name.sort
+    @@all.each do |song| 
+      return song.name.sort
     end 
   end 
 
