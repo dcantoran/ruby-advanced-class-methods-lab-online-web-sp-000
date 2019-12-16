@@ -34,8 +34,7 @@ class Song
   
   def self.alphabetical
     @@all.each do |song| 
-      song 
-      binding.pry
+      song.
     end 
   end 
 
