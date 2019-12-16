@@ -38,8 +38,9 @@ class Song
     end 
   end 
   
-  def self.new_from_filename()
-    song = self.new 
+  def self.new_from_filename(str_format)
+    
+    binding.pry
   end 
 
   def self.all
